@@ -1,5 +1,5 @@
 <template>
-<a src="{{ blok.link }}"> {{ blok.label }} </a>
+<a :href="blok.link"> {{ blok.label }} </a>
 </template>
 
 <script>

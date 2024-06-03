@@ -3,19 +3,21 @@
 
 <div class="text-4xl text-[#000000] font-bold text-start"><p>Simone Aigner</p></div>
 
-  <div>Navbar</div>
+  <div>Navbar
+<!--    <StoryblokComponent-->
+<!--      v-for="blok in blok.$globalSettings.navbar"-->
+<!--      :key="blok._uid"-->
+<!--      :blok="blok"-->
+<!--      :link="blok.link"/>-->
+  </div>
 
   <div>Mode</div>
-
-<!--  <StoryblokComponent-->
-<!--      v-for="blok in blok.navbar"-->
-<!--      :key="blok._uid"-->
-<!--      :blok="blok"/>-->
 
 
 </div>
 </template>
 
 <script setup>
+
 defineProps({ blok: Object })
 </script>

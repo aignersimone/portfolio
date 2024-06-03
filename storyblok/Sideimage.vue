@@ -1,14 +1,7 @@
 <template>
-<!--<img src="{{blok.image}}">-->
-  
+  <img :src="blok.image.filename" alt="Portrait"/>
 </template>
 
-<script>
-export default {
-  name: "sideimage"
-}
+<script setup>
+defineProps({ blok: Object })
 </script>
-
-<style scoped>
-
-</style>
