@@ -1,6 +1,6 @@
 <template>
   <div  class="flex justify-center grid grid-rows-2">
-    <div class="italic text-center">{{blok.zitat}}</div>
+    <div class="italic text-center text-lg">{{blok.zitat}}</div>
     <div class="text-center">{{blok.author}}</div>
   </div>
 </template>

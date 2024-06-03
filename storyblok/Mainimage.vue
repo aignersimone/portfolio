@@ -1,5 +1,5 @@
 <template>
-  <img :src="blok.image.filename" alt="Portrait"/>
+  <img :src="blok.image.filename" alt="Portrait" class=""/>
 </template>
 
 <script setup>
