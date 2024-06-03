@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: 'Roboto, sans-serif',
+      italiana: 'Italiana, sans-serif',
     },
   },
 }
