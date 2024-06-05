@@ -1,12 +1,13 @@
 <template>
   <div
     v-editable="blok"
-    class="py-8 text-6xl text-[#000000] font-bold text-center"
+    class="my-12 text-6xl text-[#000000] font-bold text-center"
   >
-    {{ blok.headline }}
+    <h1 class="tracking-widest">{{ blok.headline }}</h1>
   </div>
 </template>
 
 <script setup>
 defineProps({ blok: Object })
 </script>
+

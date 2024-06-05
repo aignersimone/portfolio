@@ -4,4 +4,10 @@
 
 <script setup>
 defineProps({ blok: Object })
-</script>5
+</script>
+
+<style scoped>
+img{
+  max-height: 350px;
+}
+</style>

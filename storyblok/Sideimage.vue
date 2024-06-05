@@ -1,7 +1,13 @@
 <template>
-  <img :src="blok.image.filename" alt="Portrait" class="pb-20 opacity-50 max-h-96"/>
+  <img :src="blok.image.filename" alt="Portrait" class="opacity-50"/>
 </template>
 
 <script setup>
 defineProps({ blok: Object })
 </script>
+
+<style scoped>
+ img{
+   max-height: 250px;
+ }
+</style>
