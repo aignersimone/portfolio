@@ -1,6 +1,6 @@
 <template>
   <div
-    v-editable="blok" class="grid md:grid-cols-3 my-12 place-items-center bg-[#000000] p-12 " >
+    v-editable="blok" class="grid md:grid-cols-3 my-6 place-items-center bg-[#000000] py-5 " >
 
     <StoryblokComponent
       v-for="blok in blok.columns"
