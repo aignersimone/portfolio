@@ -1,9 +1,9 @@
 <template>
   <div v-editable="blok" class="my-6 bg-[#000000] py-5 flex justify-center items-center gap-6 flex-wrap">
 
-    <img :src="blok.leftimage.filename" alt="Portrait" class="opacity-50 sideimage"/>
+    <img :src="blok.leftimage.filename" alt="Portrait" class="opacity-70 sideimage hidden md:block"/>
     <img :src="blok.middleimage.filename" alt="Portrait" class="my-4 mainimage"/>
-    <img :src="blok.rightimage.filename" alt="Portrait" class="opacity-50 sideimage"/>
+    <img :src="blok.rightimage.filename" alt="Portrait" class="opacity-70 sideimage hidden sm:block"/>
 
   </div>
 </template>

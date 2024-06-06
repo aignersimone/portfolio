@@ -1,7 +1,7 @@
 <template>
-  <SiteHeader class="p-6"></SiteHeader>
+  <SiteHeader></SiteHeader>
   <div v-editable="blok">
-    <StoryblokComponent class="px-6" v-for="blok in blok.body" :key="blok._uid" :blok="blok" />
+    <StoryblokComponent  v-for="blok in blok.body" :key="blok._uid" :blok="blok" />
   </div>
 </template>
 
@@ -12,4 +12,5 @@ defineProps({ blok: Object })
 div {
   font-family: "Space Mono", monospace;
 }
+
 </style>

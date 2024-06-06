@@ -26,6 +26,6 @@
   }
 
   .td-infotext {
-    width: 700px;
+    max-width: 1200px;
   }
   </style>

@@ -1,4 +1,4 @@
-import {getStoryblokVersion} from "./get-storyblok-version";
+import {getStoryblokVersion} from "../composables/get-storyblok-version";
 import {defineNuxtPlugin, useAsyncData, useStoryblokApi} from "../.nuxt/imports";
 
 export default defineNuxtPlugin(async () => {
@@ -6,18 +6,19 @@ export default defineNuxtPlugin(async () => {
     const storyblokApi = useStoryblokApi();
 
     const {data} = await useAsyncData(
-        `config`,
+        `global-settings`,
         async () =>
-            await storyblokApi.get(`cdn/stories/config`, {
+            await storyblokApi.get(`cdn/stories/global-settings`, {
                 version,
                 resolve_links: 'url',
                 cv: Date.now(),
             }),
     );
 
+
     return {
         provide: {
-           config: data?.value?.data.story.content,
+            globalSettings: data?.value?.data.story.content,
         },
     };
 });

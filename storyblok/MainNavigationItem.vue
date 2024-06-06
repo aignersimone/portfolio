@@ -1,13 +1,13 @@
 <template>
-<a :href="blok.link"> {{ blok.label }} </a>
+  <a :href="navItem.link.cached_url" class="navitem text-2xl"> {{ navItem.label }} </a>
 </template>
 
-<script>
-export default {
-  name: "MainNavItem"
-}
+<script setup>
+defineProps({ navItem: Object });
 </script>
 
 <style scoped>
-
+.navitem{
+  text-transform: uppercase;
+}
 </style>
