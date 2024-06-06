@@ -21,7 +21,6 @@ defineProps({ blok: Object })
   max-width: 900px;
   display: flex;
   margin: 0 auto;
-
 }
 
 </style>
