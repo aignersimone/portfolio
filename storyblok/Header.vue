@@ -7,7 +7,7 @@
       </div>
       <div class="lg:w-1/2 flex justify-start">
         <div class="">
-          <h2 class="teaser sm:text-2xl md:text-5xl align-baseline tracking-widest typed-text md:pl-0">{{blok.teaser}}</h2>
+          <h2 class="teaser text-2xl md:text-5xl align-baseline tracking-widest typed-text md:pl-0">{{blok.teaser}}</h2>
           <p class="teaser text-base align-baseline pt-4 tracking-widest typed-text pl-0">{{blok.shortinfo}} </p>
         </div>
       </div>
