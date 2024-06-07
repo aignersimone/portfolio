@@ -10,4 +10,8 @@ defineProps({ navItem: Object });
 .navitem{
   text-transform: uppercase;
 }
+
+.navitem:hover{
+  color: #71792C;
+}
 </style>
