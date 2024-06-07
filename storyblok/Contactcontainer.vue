@@ -1,10 +1,7 @@
 <template>
-  <div
-      v-editable="blok" class=" pb-5 flex justify-center items-center flex-wrap" >
-    <h2></h2>
-
+  <div class="mx-6 pb-6 flex justify-start items-center flex-wrap gap-3" >
     <StoryblokComponent
-        v-for="blok in blok.projects"
+        v-for="blok in blok.contact"
         :key="blok._uid"
         :blok="blok"
     />

@@ -1,5 +1,5 @@
 <template>
-  <a :href="navItem.link.cached_url" class="navitem text-2xl"> {{ navItem.label }} </a>
+  <a :href="navItem.link.cached_url" class="navitem text-1xl md:text-2xl"> {{ navItem.label }} </a>
 </template>
 
 <script setup>
