@@ -1,7 +1,5 @@
 <template>
-
     <div v-editable="blok" class="mb-5 bg-gray-300 pt-5 flex flex-wrap items-center justify-center">
-
       <div class="lg:w-1/2 flex justify-start lg:justify-center">
         <img :src="blok.image.filename" class="portraitimage" alt="Portrait"/>
       </div>
