@@ -7,8 +7,15 @@
   </div>
 </template>
 
-<script setup>
-defineProps({ blok: Object })
+<script setup lang="ts">
+import type {SbComponent} from "../types/sb-component";
+
+interface Zitat extends SbComponent{
+  zitat: string;
+  author: string;
+}
+
+defineProps<{ blok: Zitat }>();
 </script>
 
 <style scoped>

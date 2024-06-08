@@ -11,11 +11,18 @@
 </template>
 
 <style>
-.container{
-  max-width: 900px;
-}
+
 </style>
 
-<script setup>
-defineProps({ blok: Object })
+<script setup lang="ts">
+import type {SbComponent} from "../types/sb-component";
+
+interface Grid extends SbComponent{
+  columns: Array<SbComponent>;
+}
+
+defineProps<{
+  blok: Grid;
+}>();
+
 </script>
