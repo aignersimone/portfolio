@@ -8,9 +8,18 @@
   </div>
 </template>
 
-<script setup>
-defineProps({ blok: Object })
+<script setup lang="ts">
+import type {SbComponent} from "../types/sb-component";
+
+interface Page extends SbComponent{
+  body: Array<SbComponent>;
+}
+
+defineProps<{
+  blok: Page;
+}>();
 </script>
+
 <style >
 div {
   font-family: "Space Mono", monospace;
