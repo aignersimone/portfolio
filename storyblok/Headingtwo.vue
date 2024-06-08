@@ -8,6 +8,12 @@
 </template>
 
 
-<script setup>
-defineProps({ blok: Object })
+<script setup lang="ts">
+import type {SbComponent} from "../types/sb-component";
+
+interface Headingtwo extends SbComponent{
+  heading: string;
+}
+
+defineProps<{ blok: Headingtwo }>();
 </script>

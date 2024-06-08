@@ -24,5 +24,4 @@ interface Grid extends SbComponent{
 defineProps<{
   blok: Grid;
 }>();
-
 </script>

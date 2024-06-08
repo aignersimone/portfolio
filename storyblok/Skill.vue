@@ -11,8 +11,16 @@
   </div>
 </template>
 
-<script setup>
-defineProps({blok: Object})
+<script setup lang="ts">
+import type {SbComponent} from "../types/sb-component";
+
+interface Skill extends SbComponent{
+  filename: string;
+  heading: string;
+  skills: string;
+}
+
+defineProps<{ blok: Skill }>();
 </script>
 
 <style scoped>

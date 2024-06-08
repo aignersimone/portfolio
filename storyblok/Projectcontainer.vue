@@ -1,7 +1,6 @@
 <template>
   <div
-      v-editable="blok" class=" pb-5 flex justify-center items-center flex-wrap" >
-    <h2></h2>
+      v-editable="blok" class="projectcontainer flex justify-center items-center flex-wrap" >
 
     <StoryblokComponent
         v-for="blok in blok.projects"
@@ -11,10 +10,20 @@
   </div>
 </template>
 
-<style>
-
+<style scoped>
+.projectcontainer{
+  margin-top: -24px;
+}
 </style>
 
-<script setup>
-defineProps({ blok: Object })
+<script setup lang="ts">
+import type {SbComponent} from "../types/sb-component";
+
+interface Projectcontainer extends SbComponent{
+  projects: Array<SbComponent>;
+}
+
+defineProps<{
+  blok: Projectcontainer;
+}>();
 </script>

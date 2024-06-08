@@ -7,8 +7,14 @@
 </template>
 
 
-<script setup>
-defineProps({ blok: Object })
+<script setup lang="ts">
+import type {SbComponent} from "../types/sb-component";
+
+interface Simpletext extends SbComponent{
+  text: string;
+}
+
+defineProps<{ blok: Simpletext }>();
 </script>
 
 <style scoped>

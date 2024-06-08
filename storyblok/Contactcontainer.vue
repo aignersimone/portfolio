@@ -14,6 +14,14 @@
 }
 </style>
 
-<script setup>
-defineProps({ blok: Object })
+<script setup lang="ts">
+import type {SbComponent} from "../types/sb-component";
+
+interface Contactcontainer extends SbComponent{
+  contact: Array<SbComponent>;
+}
+
+defineProps<{
+  blok: Contactcontainer;
+}>();
 </script>
