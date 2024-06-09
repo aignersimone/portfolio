@@ -4,7 +4,7 @@
     <StoryblokComponent  v-for="blok in blok.body" :key="blok._uid" :blok="blok" />
   </div>
   <div class="flex justify-center items-center py-6">
-    <p class="text-gray-600 text-center"> Copyright © Simone Aigner | Made with Storyblok</p>
+    <p class="text-gray-600 text-center"> Copyright © Simone Aigner | Made with Storyblok | <a href="/imprint">Imprint</a></p>
   </div>
 </template>
 
