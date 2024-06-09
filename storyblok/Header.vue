@@ -5,8 +5,8 @@
       </div>
       <div class="lg:w-1/2 flex justify-start">
         <div class="">
-          <h2 class="teaser text-2xl md:text-5xl align-baseline tracking-widest typed-text md:pl-0">{{blok.teaser}}</h2>
-          <p class="teaser text-base align-baseline pt-4 tracking-widest typed-text pl-0">{{blok.shortinfo}} </p>
+          <h2 class="teaser text-2xl md:text-5xl align-baseline tracking-widest typed-teaser md:pl-0 mt-2">{{blok.teaser}}</h2>
+          <p class="teaser text-base align-baseline pt-4 tracking-widest typed-text pl-0 mb-2">{{blok.shortinfo}} </p>
         </div>
       </div>
     </div>
@@ -57,7 +57,13 @@ defineProps<{ blok: Header }>();
 .typed-text {
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 3s steps(30, end); /* Geschwindigkeit der Animation und Anzahl der Schritte (Buchstaben) */
+  animation: typing 3s steps(40, end); /* Geschwindigkeit der Animation und Anzahl der Schritte (Buchstaben) */
+}
+
+.typed-teaser {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end);
 }
 
 </style>

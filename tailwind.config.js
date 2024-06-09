@@ -23,6 +23,10 @@ module.exports = {
       '5': '32px',
       '6': '48px',
     },
-
+    // extend: {
+    //   screens: {
+    //     'xs': '610px',
+    //   },
+    // },
   },
 }
