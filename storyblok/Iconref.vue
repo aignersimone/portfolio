@@ -1,8 +1,9 @@
 <template>
   <div
       v-editable="blok"
-      class="blocktext text-lg text-start mx-6 mb-1"  >
-    <b>{{ blok.iconname }}:</b> {{blok.iconref}}
+      class="blocktext text-lg text-start mx-6 mb-1 flex flex-wrap"  >
+    <p><b>{{ blok.iconname }}:</b> </p>
+    <p>{{blok.iconref}}</p>
   </div>
 </template>
 
