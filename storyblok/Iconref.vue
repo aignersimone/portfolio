@@ -2,7 +2,7 @@
   <div
       v-editable="blok"
       class="blocktext text-lg text-start mx-6 mb-1"  >
-    <b>{{ blok.iconname }}: </b> {{blok.iconref}}
+    <p><b>{{ blok.iconname }}: </b> {{blok.iconref}}</p>
   </div>
 </template>
 
