@@ -1,6 +1,6 @@
 <template>
   <div class="pagebutton">
-    <a :href="blok.link && blok.link.story ? blok.link.story.url : '#'" class="mx-6 bg-blend-darken bg-gray-100 p-2 rounded-lg">{{ blok.buttontext }}</a>
+    <a :href="blok.link && blok.link.story ? blok.link.story.url : '#'" class="mx-6 bg-blend-darken bg-gray-100 p-2 rounded-lg shadow-lg">{{ blok.buttontext }}</a>
   </div>
 </template>
 
