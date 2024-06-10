@@ -1,7 +1,6 @@
 <template>
   <div
       v-editable="blok" class="projectcontainer flex justify-center items-center flex-wrap" >
-
     <StoryblokComponent
         v-for="blok in blok.projects"
         :key="blok._uid"

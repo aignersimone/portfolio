@@ -1,8 +1,6 @@
 <template>
   <div class="mx-6 bg">
-    <div
-        v-editable="blok"
-        class="grid my-4 lifecontainer">
+    <div v-editable="blok" class="grid my-4 lifecontainer">
       <StoryblokComponent
           v-for="blok in blok.lifesteps"
           :key="blok._uid"
