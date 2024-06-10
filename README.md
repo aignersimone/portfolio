@@ -7,7 +7,9 @@
 
 <b>GITHUB REPOSITORY:</b> https://github.com/aignersimone/portfolio
 
-
+<b>Short notice</b><br/>
+- `MainNavigationItem.vue`: I didn't made a TypeScript definition
+- `SiteHeader.vue`: I didn't made a TypeScript definition
 
 
 [//]: # (# Storyblok quick starter project)
