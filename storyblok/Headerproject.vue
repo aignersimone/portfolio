@@ -50,7 +50,7 @@ defineProps<{ blok: Header }>();
 }
 
 .logoimage{
-  max-height: 200px;
+  max-height: 300px;
 }
 
 @keyframes typing {
