@@ -27,7 +27,7 @@ const props = defineProps<{ blok: Otherpagebutton }>();
 
 <style scoped>
 .pagebutton {
-  margin-top: -24px;
+  margin-top: -12px;
 }
 a:hover {
   background-color: #71792c;
