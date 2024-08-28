@@ -1,7 +1,7 @@
 <template>
   <div
       class="projectcard bg-blend-darken bg-gray-100 p-5 rounded-lg shadow-lg flex flex-col items-start text-left max-w-sm m-5">
-    <a :href="blok.link.url">
+    <a :href="blok.link && blok.link.story ? blok.link.story.url : '#'">
     <div class="w-full flex justify-center">
         <img :src="blok.image.filename" class="image ">
     </div>
